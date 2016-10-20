@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <name>timed_roslaunch</name>
+  <version>0.0.0</version>
+  <description>Script to delay the launch of a roslaunch file</description>
+
+  <maintainer email="hoge@todo.todo">hoge</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
