@@ -7,7 +7,7 @@
 #
 # Usage: sh timed_roslaunch.sh [number of seconds to delay] [rospkg] [roslaunch file]
 
-function showHelp(){
+showHelp() {
     echo 
     echo "This script can delay the launch of a roslaunch file"
     echo "Place it in the 'scripts' folder of your catkin package"
