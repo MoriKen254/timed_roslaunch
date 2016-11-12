@@ -1,13 +1,17 @@
 <?xml version="1.0"?>
 <package>
   <name>timed_roslaunch</name>
-  <version>0.0.0</version>
-  <description>Script to delay the launch of a roslaunch file</description>
-
+  <version>0.1.0</version>
+  <description>
+    Script to delay the launch of a roslaunch file
+  </description>
   <maintainer email="p595201m@mail.kyutech.jp">Masaru Morita</maintainer>
-
+  <maintainer email="o111027y@mail.kyutech.jp">Doi Yusuke</maintainer>
   <license>BSD</license>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <url type="repository">https://github.com/MoriKen254/timed_roslaunch</url>
 
+  <author email="p595201m@mail.kyutech.jp">Masaru Morita</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
 </package>
