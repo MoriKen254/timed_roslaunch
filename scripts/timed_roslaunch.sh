@@ -5,7 +5,7 @@
 # Koen Lekkerkerker
 # Thu 24 Apr 2014 
 #
-# Use: ./timed_roslaunch.sh [number of seconds to delay] [rospkg] [roslaunch file]
+# Usage: sh timed_roslaunch.sh [number of seconds to delay] [rospkg] [roslaunch file]
 #
 
 function showHelp(){
@@ -16,7 +16,7 @@ function showHelp(){
     echo 
     echo "Run it from command line:"
     echo 
-    echo "Use: ./timed_roslaunch.sh [number of seconds to delay] [rospkg] [roslaunch file] [arguments (optional)]"
+    echo "Usage: ./timed_roslaunch.sh [number of seconds to delay] [rospkg] [roslaunch file] [arguments (optional)]"
     echo "Or: rosrun [yourpackage] time_roslaunch.sh [number of seconds to delay] [rospkg] [roslaunch file] [arguments (optional)]"
     echo "Example: ./timed_roslaunch.sh 2 turtlebot_navigation amcl_demo.launch initial_pose_x:=17.0 initial_pose_y:=17.0"
     echo 
