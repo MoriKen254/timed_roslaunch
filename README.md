@@ -3,9 +3,7 @@ refer to [Can I run a bash script using roslaunch?](http://answers.ros.org/quest
 
 ## Usage
 This script can delay the launch of a roslaunch file.
-
-Place it in the 'scripts' folder of your catkin package
-and make sure that the file is executable (chmod +x timed_roslaunch.sh)
+Make sure that the file is executable (chmod +x timed_roslaunch.sh)
 
 ### Run it from command line
 
@@ -16,13 +14,13 @@ and make sure that the file is executable (chmod +x timed_roslaunch.sh)
 Or
 
 ```bash
-rosrun [yourpackage] time_roslaunch.sh [number of seconds to delay] [rospkg] [roslaunch file] [arguments (optional)]
+rosrun timed_roslaunch timed_roslaunch.sh [number of seconds to delay] [rospkg] [roslaunch file] [arguments (optional)]"
 ```
 
 Example:
 
 ```bash
-./timed_roslaunch.sh 2 turtlebot_navigation amcl_demo.launch initial_pose_x:=17.0 initial_pose_y:=17.0
+rosrun timed_roslaunch timed_roslaunch.sh 2 turtlebot_navigation amcl_demo.launch initial_pose_x:=17.0 initial_pose_y:=17.0"
 ```
 
 ### Run it from another roslaunch file
@@ -30,7 +28,7 @@ Example:
 ```xml
 <launch>
   <arg name="initial_pose_y" default="17.0" />
-  <node pkg="semantic_turtle_test" type="timed_roslaunch.sh"
+  <node pkg="timed_roslaunch" type="timed_roslaunch.sh"
     args="2 turtlebot_navigation amcl_demo.launch initial_pose_x:=17.0 initial_pose_y:=$(arg initial_pose_y)"
     name="timed_roslaunch" output="screen">
   </node>
