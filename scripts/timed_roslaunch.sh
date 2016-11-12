@@ -1,5 +1,3 @@
-cript to delay the launch of a roslaunch file
-# 
 #!/bin/bash          
 #
 # Script to delay the launch of a roslaunch file
