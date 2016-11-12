@@ -1,12 +1,11 @@
 #!/bin/bash          
-#
+
 # Script to delay the launch of a roslaunch file
 # 
 # Koen Lekkerkerker
 # Thu 24 Apr 2014 
 #
 # Usage: sh timed_roslaunch.sh [number of seconds to delay] [rospkg] [roslaunch file]
-#
 
 function showHelp(){
     echo 
