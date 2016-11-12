@@ -1,11 +1,16 @@
 #!/bin/bash          
 
+# BSD 3-Clause License
+# https://opensource.org/licenses/BSD-3-Clause
+#
+# Copyright (c) 2016, Masaru Morita
+# All rights reserved.
+
+# --------------------------------------------------------------------
 # Script to delay the launch of a roslaunch file
-# 
-# Koen Lekkerkerker
-# Thu 24 Apr 2014 
 #
 # Usage: sh timed_roslaunch.sh [number of seconds to delay] [rospkg] [roslaunch file]
+# --------------------------------------------------------------------
 
 showHelp() {
     echo 
