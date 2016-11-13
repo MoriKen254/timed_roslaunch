@@ -36,4 +36,4 @@ rosrun timed_roslaunch timed_roslaunch.sh 2 turtlebot_navigation amcl_demo.launc
 ```
 
 ## LICENSE
-This software is released under the BSD 2-Clause License, see LICENSE.txt.
+This software is released under the BSD 3-Clause License, see LICENSE.txt.
