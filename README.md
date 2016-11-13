@@ -27,11 +27,9 @@ rosrun timed_roslaunch timed_roslaunch.sh 2 turtlebot_navigation amcl_demo.launc
 
 ```xml
 <launch>
-  <arg name="initial_pose_y" default="17.0" />
   <node pkg="timed_roslaunch" type="timed_roslaunch.sh"
-    args="2 turtlebot_navigation amcl_demo.launch initial_pose_x:=17.0 initial_pose_y:=$(arg initial_pose_y)"
-    name="timed_roslaunch" output="screen">
-  </node>
+    args="2 turtlebot_navigation amcl_demo.launch initial_pose_x:=17.0 initial_pose_y:=17.0"
+    name="timed_roslaunch" output="screen" />
 </launch>
 ```
 
