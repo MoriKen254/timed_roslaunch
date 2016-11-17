@@ -34,7 +34,7 @@ showHelp() {
     echo '</launch>'
 }
 
-if [ $# -lt 1 -o "$1" = "-h" ]; then
+if [ $# -lt 3 -o "$1" = "-h" ]; then
     showHelp
 else 
     echo "start wait for $1 seconds"
