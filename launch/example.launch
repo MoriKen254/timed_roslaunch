@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
+    <arg name="time" value="2" />
+    <arg name="pkg" value="turtlebot_navigation" />
+    <arg name="file" value="amcl_demo.launch" />
+    <arg name="value" value="initial_pose_x:=17.0 initial_pose_y:=17.0" />
+  </include>
+</launch>
