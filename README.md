@@ -6,13 +6,13 @@ Make sure that the file is executable (chmod +x timed_roslaunch.sh)
 ### Run it from command line
 
 ```bash
-rosrun timed_roslaunch timed_roslaunch.sh [number of seconds to delay] [rospkg] [roslaunch file] [arguments (optional)]"
+rosrun timed_roslaunch timed_roslaunch.sh [number of seconds to delay] [rospkg] [roslaunch file] [arguments (optional)]
 ```
 
 Or
 
 ```bash
-roslaunch timed_roslaunch timed_roslaunch.launch time:=[number of second to delay] pkg:=[rospkg] file:=[roslaunch file] value:=[arguments (aptional)]
+roslaunch timed_roslaunch timed_roslaunch.launch time:=[number of second to delay] pkg:=[rospkg] file:=[roslaunch file] value:=[arguments (optional)]
 ```
 
 Example:
