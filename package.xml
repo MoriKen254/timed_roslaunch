@@ -9,7 +9,8 @@
   <maintainer email="o111027y@mail.kyutech.jp">Doi Yusuke</maintainer>
   <license>BSD</license>
 
-  <url type="repository">https://github.com/MoriKen254/timed_roslaunch</url>
+  <url type="repository">https://github.com/MoriKen254/timed_roslaunch.git</url>
+  <url type="bugtrucker">https://github.com/MoriKen254/timed_roslaunch/issues</url>
 
   <author email="p595201m@mail.kyutech.jp">Masaru Morita</author>
 
