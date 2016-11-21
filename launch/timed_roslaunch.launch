@@ -1,0 +1,9 @@
+<launch>
+  <arg name="time" />
+  <arg name="pkg" />
+  <arg name="file" />
+  <arg name="value" default="" />
+  <arg name="node_name" default="timed_roslaunch_$(arg time)_$(arg pkg)" />
+
+  <node pkg="timed_roslaunch" type="timed_roslaunch.sh" args="$(arg time) $(arg pkg) $(arg file) $(arg value)" name="$(arg node_name)" />
+</launch>
