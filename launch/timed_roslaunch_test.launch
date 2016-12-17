@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
+    <arg name="time" value="4" />
+    <arg name="pkg" value="timed_roslaunch" />
+    <arg name="file" value="runtest.launch" />
+    <arg name="value" value="arg1:=1.2" />
+  </include>
+</launch>
