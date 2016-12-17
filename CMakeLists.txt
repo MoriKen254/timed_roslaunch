@@ -1,3 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(timed_roslaunch)
-find_package(catkin REQUIRED)
+find_package(catkin REQUIRED COMPONENTS
+  rospy
+  roslaunch
+)
+
+roslaunch_add_file_check(test/timed_roslaunch.test.xml)
