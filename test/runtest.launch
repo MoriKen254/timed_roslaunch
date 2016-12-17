@@ -1,0 +1,5 @@
+<launch>
+  <arg name="arg1" default="0.0"/>
+  <node pkg="timed_roslaunch" type="test.py" name="timed_roslaunch_test_node" output="screen"
+        args="$(arg arg1)" />
+</launch>

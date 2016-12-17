@@ -1,4 +1,4 @@
-# timed_roslaunch
+# timed_roslaunch [![Build Status](https://travis-ci.org/MoriKen254/timed_roslaunch.svg?branch)](https://travis-ci.org/MoriKen254/timed_roslaunch) 
 ## Usage
 This script can delay the launch of a roslaunch file.
 Make sure that the file is executable (chmod +x timed_roslaunch.sh)
@@ -30,7 +30,7 @@ rosrun timed_roslaunch timed_roslaunch.sh 2 turtlebot_navigation amcl_demo.launc
     <arg name="pkg" value="turtlebot_navigation" />
     <arg name="file" value="amcl_demo.launch" />
     <arg name="value" value="initial_pose_x:=17.0 initial_pose_y:=17.0" />
-    <arg name="node_name" value="timed_roslaunch" /> <!-- This is optional argment -->
+    <arg name="node_name" value="timed_roslaunch" /> <!-- This is optional jBrgment -->
   </include>
 </launch>
 ```
