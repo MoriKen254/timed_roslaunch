@@ -5,17 +5,16 @@
   <description>
     Script to delay the launch of a roslaunch file
   </description>
+
   <maintainer email="p595201m@mail.kyutech.jp">Masaru Morita</maintainer>
   <maintainer email="o111027y@mail.kyutech.jp">Doi Yusuke</maintainer>
   <license>BSD</license>
 
   <url type="repository">https://github.com/MoriKen254/timed_roslaunch.git</url>
   <url type="bugtrucker">https://github.com/MoriKen254/timed_roslaunch/issues</url>
-
   <author email="p595201m@mail.kyutech.jp">Masaru Morita</author>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <exec_depend>roslaunch</exec_depend>
   <exec_depend>rospy</exec_depend>
-
+  <exec_depend>roslaunch</exec_depend> <!-- this is for launch test -->
 </package>
