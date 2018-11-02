@@ -15,6 +15,6 @@
   <author email="p595201m@mail.kyutech.jp">Masaru Morita</author>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <exec_depend>rospy</exec_depend>
-  <exec_depend>roslaunch</exec_depend> <!-- this is for launch test -->
+  <test_depend>rospy</test_depend>
+  <test_depend>roslaunch</test_depend> <!-- this is for launch test -->
 </package>
