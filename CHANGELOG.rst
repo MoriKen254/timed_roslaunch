@@ -2,8 +2,8 @@
 Changelog for package timed_roslaunch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.1 (2018-11-02)
+------------------
 * Modify travis setting.
 * Fix timed_roslaunch to add default values
 * Rename exmample file
