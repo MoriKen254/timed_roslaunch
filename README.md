@@ -1,4 +1,7 @@
 # timed_roslaunch [![Build Status](https://travis-ci.org/MoriKen254/timed_roslaunch.svg?branch)](https://travis-ci.org/MoriKen254/timed_roslaunch) 
+
+This script can delay the launch of a roslaunch file.
+
 ## Usage
 This script can delay the launch of a roslaunch file.
 Make sure that the file is executable (chmod +x timed_roslaunch.sh)
