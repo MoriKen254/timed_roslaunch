@@ -2,8 +2,8 @@
 Changelog for package timed_roslaunch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.2 (2018-11-09)
+------------------
 * Fix install scripts in CMakeLists
 * Contributors: MoriKen254
 
