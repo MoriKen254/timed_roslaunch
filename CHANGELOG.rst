@@ -2,8 +2,8 @@
 Changelog for package timed_roslaunch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.3 (2018-11-09)
+------------------
 * Merge pull request `#14 <https://github.com/MoriKen254/timed_roslaunch/issues/14>`_ from MoriKen254/mk/mod-cmake-kinetic
   Modify CMakeLists for launch and test dir install
 * Modify CMakeLists for launch and test dir install
