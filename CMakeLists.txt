@@ -10,10 +10,12 @@ install(PROGRAMS
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
-install(FILES
-    launch/timed_roslaunch.launch
-    launch/timed_roslaunch_test.launch
-    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+install(DIRECTORY launch/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
+)
+
+install(DIRECTORY test/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/test
 )
 
 # Test
