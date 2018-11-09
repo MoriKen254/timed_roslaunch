@@ -14,6 +14,10 @@ install(DIRECTORY launch/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
 )
 
+install(DIRECTORY test/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/test
+)
+
 # Test
 if (CATKIN_ENABLE_TESTING)
   find_package(roslaunch REQUIRED)
