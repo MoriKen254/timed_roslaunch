@@ -11,8 +11,11 @@ source /opt/ros/kinetic/setup.bash
 
 ### source
 ```bash
+cd ~/<catkin_ws>/src
 git clone https://github.com/MoriKen254/timed_roslaunch.git
-source <catkin_ws>/devel/setup.bash
+cd ~/<catkin_ws>
+catkin_make
+source ~/<catkin_ws>/devel/setup.bash
 ```
 
 ## Usage
