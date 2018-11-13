@@ -2,6 +2,19 @@
 
 This script can delay the launch of a roslaunch file.
 
+## Install
+### atp
+```bash
+sudo apt install ros-kinetic-timed-roslaunch
+source /opt/ros/kinetic/setup.bash
+```
+
+### source
+```bash
+git clone https://github.com/MoriKen254/timed_roslaunch.git
+source <catkin_ws>/devel/setup.bash
+```
+
 ## Usage
 This script can delay the launch of a roslaunch file.
 Make sure that the file is executable (chmod +x timed_roslaunch.sh)
@@ -33,7 +46,7 @@ rosrun timed_roslaunch timed_roslaunch.sh 2 turtlebot_navigation amcl_demo.launc
     <arg name="pkg" value="turtlebot_navigation" />
     <arg name="file" value="amcl_demo.launch" />
     <arg name="value" value="initial_pose_x:=17.0 initial_pose_y:=17.0" />
-    <arg name="node_name" value="timed_roslaunch" /> <!-- This is optional jBrgment -->
+    <arg name="node_name" value="timed_roslaunch" /> <!-- This is an optional argument -->
   </include>
 </launch>
 ```
