@@ -3,7 +3,7 @@
 This script can delay the launch of a roslaunch file.
 
 ## Install
-### atp
+### apt
 ```bash
 sudo apt install ros-kinetic-timed-roslaunch
 source /opt/ros/kinetic/setup.bash
