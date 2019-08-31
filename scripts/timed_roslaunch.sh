@@ -43,5 +43,5 @@ else
 
     shift # The sleep time is droped
         echo "now running 'roslaunch $@'"
-    roslaunch $@
+    roslaunch "$@"
 fi
