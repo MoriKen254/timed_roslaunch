@@ -2,8 +2,8 @@
 Changelog for package timed_roslaunch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.1 (2020-04-22)
+------------------
 * Merge pull request `#16 <https://github.com/MoriKen254/timed_roslaunch/issues/16>`_ from v4hn/patch-1
   make sure to handle spaces in parameters
 * make sure to handle spaces in parameters
