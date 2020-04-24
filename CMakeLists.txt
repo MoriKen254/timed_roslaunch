@@ -10,11 +10,15 @@ install(PROGRAMS
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
-install(FILES
-    launch/timed_roslaunch.launch
-    launch/timed_roslaunch_test.launch
-    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+set(DIRECTORIES
+  launch
 )
+
+# Install all files
+foreach(dirs ${DIRECTORIES})
+  install(DIRECTORY ${dirs}/
+    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dirs})
+endforeach()
 
 # Test
 if (CATKIN_ENABLE_TESTING)
