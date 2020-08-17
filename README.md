@@ -1,6 +1,6 @@
 # timed_roslaunch [![Build Status](https://travis-ci.org/MoriKen254/timed_roslaunch.svg?branch)](https://travis-ci.org/MoriKen254/timed_roslaunch) 
 
-This script can delay the launch of a roslaunch file.
+This script can delay the launch of a roslaunch file.  Additionally ROS time can be used, allowing the delay to follow the ROS clock which may be slower than real-time, particularly in a simulation environment.
 
 ## Usage
 This script can delay the launch of a roslaunch file.
@@ -9,19 +9,19 @@ Make sure that the file is executable (chmod +x timed_roslaunch.sh)
 ### Run it from command line
 
 ```bash
-rosrun timed_roslaunch timed_roslaunch.sh [number of seconds to delay] [rospkg] [roslaunch file] [arguments (optional)]
+rosrun timed_roslaunch timed_roslaunch.sh [number of seconds to delay] [userostime (true or false)] [rospkg] [roslaunch file] [arguments (optional)]
 ```
 
 Or
 
 ```bash
-roslaunch timed_roslaunch timed_roslaunch.launch time:=[number of second to delay] pkg:=[rospkg] file:=[roslaunch file] value:=[arguments (optional)]
+roslaunch timed_roslaunch timed_roslaunch.launch time:=[number of second to delay] userostime:=[true or false] pkg:=[rospkg] file:=[roslaunch file] value:=[arguments (optional)]
 ```
 
 Example:
 
 ```bash
-rosrun timed_roslaunch timed_roslaunch.sh 2 turtlebot_navigation amcl_demo.launch initial_pose_x:=17.0 initial_pose_y:=17.0"
+rosrun timed_roslaunch timed_roslaunch.sh 2 false turtlebot_navigation amcl_demo.launch initial_pose_x:=17.0 initial_pose_y:=17.0"
 ```
 
 ### Run it from another roslaunch file
@@ -30,6 +30,7 @@ rosrun timed_roslaunch timed_roslaunch.sh 2 turtlebot_navigation amcl_demo.launc
 <launch>
   <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
     <arg name="time" value="2" />
+    <arg name="userostime" value="false" />
     <arg name="pkg" value="turtlebot_navigation" />
     <arg name="file" value="amcl_demo.launch" />
     <arg name="value" value="initial_pose_x:=17.0 initial_pose_y:=17.0" />
@@ -43,7 +44,7 @@ Or
 ```xml
 <launch>
   <node pkg="timed_roslaunch" type="timed_roslaunch.sh"
-    args="2 turtlebot_navigation amcl_demo.launch initial_pose_x:=17.0 initial_pose_y:=17.0"
+    args="2 false turtlebot_navigation amcl_demo.launch initial_pose_x:=17.0 initial_pose_y:=17.0"
     name="timed_roslaunch" output="screen" />
 </launch>
 ```
