@@ -33,7 +33,8 @@ rosrun timed_roslaunch timed_roslaunch.sh 2 turtlebot_navigation amcl_demo.launc
     <arg name="pkg" value="turtlebot_navigation" />
     <arg name="file" value="amcl_demo.launch" />
     <arg name="value" value="initial_pose_x:=17.0 initial_pose_y:=17.0" />
-    <arg name="node_name" value="timed_roslaunch" /> <!-- This is optional jBrgment -->
+    <arg name="node_name" value="timed_roslaunch" /> <!-- This is an optional argument -->
+    <arg name="output" value="screen" /> <!-- This is an optional argument -->
   </include>
 </launch>
 ```
